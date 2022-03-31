@@ -1,0 +1,68 @@
+body {
+	font: 150% Arial, Helvetica, sans-serif;
+}
+/* 150% do tamanho original "pai"  */
+
+#pagina {
+	padding: 5px;
+	width: 420px; /* tamanho mais comum usado */
+	margin: 20px auto;
+}
+
+/* Media queries/* 
+
+/*  1920px ou menor */
+@media screen and (max-width: 1920px) {
+	
+	#pagina {
+		background-color: yellow;
+	}
+
+}
+
+
+/*  1366px ou menor */
+@media screen and (max-width: 1366px) {
+	
+	#pagina{
+		background-color: royalblue;
+	}
+
+}
+
+/*  1080px ou menor */
+@media screen and (max-width: 1080px) {
+	
+	#pagina {
+		background-color: rosybrown;
+	}
+
+}
+
+
+/*  1024px ou menor */
+@media screen and (max-width: 1024px) {
+	
+	#pagina {
+		background-color: magenta;
+	}
+
+}
+
+/* 768px ou menor  */
+@media screen and (max-width: 768px) {
+
+	#pagina {
+		background-color: orange;
+	}
+
+}
+
+/*  420px or menor  */
+@media screen and (max-width: 420px) {
+
+	#pagina {
+		background-color: green;
+	}
+
+}
