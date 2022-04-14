@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<htmllang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Atividade7 Pedra Papel e Tesoura</title>
+        <script>/* VARIAVEIS GLOBAIS */
+        var usuario;
+        var pc;
+        var nome;
+        
+        nome = prompt("Qual é o seu nome?");
+        usuario = parseInt(prompt("Digite um número"+"\n 1 = Pedra" + "\n 2 = Papel "+"\n 3 = Tesoura"));
+        pc = Math.random()*100;
+        
+        if (pc <= 32){
+            pc = "1";
+        } if(pc <=65){
+            pc = "2";
+        }else{
+            pc = "3";
+        }
+        
+        pc == usuario ? alert(nome+"\nEmpate !!!" + "\n Sua escolha "+ usuario + "\n Escolha do PC "+pc +"\n 1 = Pedra" + "\n 2 = Papel "+"\n 3 = Tesoura" ) :
+        pc == "3" && usuario == "1"  ? alert("Parabéns " + nome + "\n Você Ganhou !!!"+ "\n Sua escolha "+ usuario + "\n Escolha do PC "+pc +"\n 1 = Pedra" + "\n 2 = Papel "+"\n 3 = Tesoura") : 
+        pc == "2" && usuario == "3" ? alert("Parabéns " + nome +"\n Você Ganhou !!!" + "\n Sua escolha "+ usuario + "\n Escolha do PC "+pc +"\n 1 = Pedra" + "\n 2 = Papel "+"\n 3 = Tesoura"): 
+        pc == "1" && usuario == "2" ?alert("Parabéns " + nome +"\n Você Ganhou !!!" + "\n Sua escolha "+ usuario + "\n Escolha do PC "+pc +"\n 1 = Pedra" + "\n 2 = Papel "+"\n 3 = Tesoura") :
+        alert(nome + "\n Você Perdeu !!!"+ "\n Sua escolha "+ usuario + "\n Escolha do PC "+pc +"\n 1 = Pedra" + "\n 2 = Papel "+"\n 3 = Tesoura");
+        </script>
+        </head>
+        <body>
+
+        </body>
+        </html>
